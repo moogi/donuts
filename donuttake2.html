@@ -1,0 +1,116 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>A Donut Store</title>
+	<link rel="stylesheet" href="donut.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script src="lean-slider.js"></script>
+<link rel="stylesheet" href="lean-slider.css" type="text/css" />
+<script type="text/javascript" src="donut.js"></script>
+<script type="text/javascript" src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js"></script>
+</head>
+<body>
+	<div id="site-wrapper">
+		<div id="header">
+			<H3> A Class Donuts </h3>
+		</div>
+		<div id="location-bar">
+			<h3 style="padding-left: 70px">Locations</h3>
+			<div id="menu">
+			<h3>Downtown</h3>
+			<div><p>
+				2124 5th Ave.
+				Seattle, WA 98121
+				<strong>HOURS:</strong>
+				7:00 AM – 6:00 PM 
+			</p></div>
+			<h3>Capital Hill</h3>
+			<div><p>
+				609 Summit Ave E.
+				Seattle, WA 98102
+				<strong>HOURS:</strong>
+				7:00 AM – 6:00 PM 
+			</p></div>
+			<h3>South Lake Union </h3>
+			<div><p>
+				590 Terry Ave North.
+				Seattle, WA 98109
+				<strong>HOURS:</strong>
+				7:00 AM – 6:00 PM 
+			</p></div>
+			<h3>Wedgewood</h3>
+			<div><p>
+				6855 35th Ave NE.
+				Seattle, WA 98115
+				<strong>HOURS:</strong>
+				7:00 AM – 6:00 PM 
+			</p></div>
+			<h3>Ballard</h3>
+			<div><p>
+				1416 NW 46th Street
+				Seattle, WA 98107
+				<strong>HOURS:</strong>
+				7:00 AM – 6:00 PM 
+			</p></div>
+			</div>
+
+	</div>
+	</div>
+		<div id="content">
+			<br></br>
+			<div id="slider">
+    <div class="slide1">
+        <img src="https://dl.dropboxusercontent.com/u/23355778/cscohen/cscohen/bootstrap/img/tumblr_static_donuts__1_.jpg" alt=""/>
+    </div>
+    <div class="slide2">
+        <img src="https://dl.dropboxusercontent.com/u/23355778/cscohen/cscohen/bootstrap/img/donuts-enlarge%28fgauf3%29.jpg" alt=""/>
+    </div>
+    <div class="slide3">
+        <img src="https://dl.dropboxusercontent.com/u/23355778/cscohen/cscohen/bootstrap/img/url.jpg" alt="" />
+    </div>
+</div>
+<br></br>
+			<form id='donut'>
+		<table>
+	<tr>
+		<th colspan="4">Please Enter the Following Information</th>
+	</tr>
+	<tr> 
+		<th>Location</th>
+		<th>Min Guests Per Hour</th>
+		<th>Max Guests Per Hour</th>
+		<th>Average Donut Sold</th>
+	</tr>
+	<tr>
+		<td>
+		<select id='location'>
+
+			<option value="Downtown">Downtown</option>
+			<option value="Capital Hill">Capital Hill</option>
+			<option value="South Lake Union">South Lake Union</option>
+			<option value="Wedgewood">Wedgewood</option>
+			<option value="Ballard">Ballard</option>
+		</td>
+		<td><input type="text" id="minCust" placeholder="Minimum Number"></td>
+		<td><input type="text" id="maxCust" placeholder="Maximum Number"></td>
+		<td><input type="text" id="aveSold" placeholder="Donuts"></td>
+</select>
+</table>
+<br></br>
+
+<input type="button" onClick="processForm();" value="Get Baking" id="submit" />
+</form>
+</div>
+	<div id="footer">
+
+		<img src="https://dl.dropboxusercontent.com/u/23355778/cscohen/cscohen/bootstrap/img/DonutIcon.png"id="spindonut">
+		<footer>Copywrite ©
+		<script type="text/javascript">
+			var d = new Date()
+			document.write(d.getFullYear())
+		</script> A Class Donut Shop LLC
+		</footer></div>
+	</div>
+</body>
+</html>
